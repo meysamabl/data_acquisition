@@ -1,0 +1,37 @@
+<html>
+	<head>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="/p5.min.js"></script>
+		<script src="/smoothie.js"></script>
+		<script type="text/javascript" src="/client.js"></script>
+		<style>
+			html, body {
+				height: 100%;
+			}
+
+			html {
+				display: table;
+				margin: auto;
+			}
+
+			body {
+				display: table-cell;
+				vertical-align: middle;
+			}
+			.live {
+				height: 90px;
+				line-height: 90px;
+				text-align: center;
+				border: 2px dashed #f69c55;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 class="live">Light Sensor Data Acquisition</h1>
+		<div>Min: <span id="minval"></span></div>
+		<div>Max: <span id="maxval"></span></div>
+		<br />
+		<canvas id="smoothie-chart" width="625" height="125">	
+	</body>
+</html>
